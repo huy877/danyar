@@ -18,7 +18,7 @@ DAY = 86400
 INBOUNDS = [
     # tag              proto     port  net            server path                                   fp       name         group
     ("JX-VLESS-WS-1", "vless",  10001, "ws",          "/ws/",     "chrome",  "𝗣𝗿𝗼",        "pro"),
-    ("JX-VLESS-WS-2", "vless",  10002, "ws",          "/stream/", "firefox", "⚡ 𝗙𝗹𝗮𝘀𝗵",    "std"),
+    ("JX-VLESS-WS-2", "vless",  10002, "ws",          "/stream/", "firefox", "Tunnel 🇮🇷🇱🇷",    "std"),
     ("JX-TROJAN-WS",  "trojan", 10003, "ws",          "/live/",   "safari",  "🔥 𝗙𝗶𝗿𝗲",     "std"),
     ("JX-VMESS-WS",   "vmess",  10004, "ws",          "/gw/",    "edge",    "💎 𝗗𝗶𝗮𝗺𝗼𝗻𝗱", "std"),
 ]
