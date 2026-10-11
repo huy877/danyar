@@ -1,11 +1,11 @@
-<p align="center">
-  <a href="https://github.com/PasarGuard/panel" target="_blank" rel="noopener noreferrer">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/PasarGuard/PasarGuard.github.io/raw/main/public/logos/PasarGuard-white-logo.png">
-      <img width="160" height="160" src="https://github.com/PasarGuard/PasarGuard.github.io/raw/main/public/logos/PasarGuard-black-logo.png">
-    </picture>
-  </a>
-</p>
+<div align="center">
+
+<a href="https://github.com/PasarGuard/panel" target="_blank" rel="noopener noreferrer">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/PasarGuard/PasarGuard.github.io/raw/main/public/logos/PasarGuard-white-logo.png">
+    <img width="160" height="160" src="https://github.com/PasarGuard/PasarGuard.github.io/raw/main/public/logos/PasarGuard-black-logo.png">
+  </picture>
+</a>
 
 <h1 align="center">🛡️ PasarGuard</h1>
 
@@ -54,16 +54,20 @@
   </a>
 </p>
 
+</div>
+
+---
+
 ## 📋 Table of Contents
 
 > **Quick Navigation** - Jump to any section below
 
--   [📖 Overview](#-overview)
-    -   [🤔 Why using PasarGuard?](#-why-using-pasarguard)
-        -   [✨ Features](#-features)
--   [🚀 Installation guide](#-installation-guide)
--   [📚 Documentation](#-documentation)
--   [💖 Donation](#-donation)
+- [📖 Overview](#-overview)
+    - [🤔 Why using PasarGuard?](#-why-using-pasarguard)
+        - [✨ Features](#-features)
+- [🚀 Installation guide](#-installation-guide)
+- [📚 Documentation](#-documentation)
+- [💖 Donation](#-donation)
 
 ---
 
@@ -130,110 +134,4 @@ PasarGuard is a user-friendly, feature-rich, and reliable proxy management tool.
 
 **TimescaleDB (Recommended):**
 ```bash
-sudo bash -c "$(curl -fsSL https://github.com/PasarGuard/scripts/raw/main/pasarguard.sh)" @ install --database timescaledb
-```
-
-**SQLite:**
-```bash
-sudo bash -c "$(curl -fsSL https://github.com/PasarGuard/scripts/raw/main/pasarguard.sh)" @ install
-```
-
-**MySQL:**
-```bash
-sudo bash -c "$(curl -fsSL https://github.com/PasarGuard/scripts/raw/main/pasarguard.sh)" @ install --database mysql
-```
-
-**MariaDB:**
-```bash
-sudo bash -c "$(curl -fsSL https://github.com/PasarGuard/scripts/raw/main/pasarguard.sh)" @ install --database mariadb
-```
-
-**PostgreSQL:**
-```bash
-sudo bash -c "$(curl -fsSL https://github.com/PasarGuard/scripts/raw/main/pasarguard.sh)" @ install --database postgresql
-```
-
-### 📋 After installation:
-
-<div align="left">
-
-**📋 Watch the logs** (press `Ctrl+C` to stop)
-
-**📁 Files are located at** `/opt/pasarguard`
-
-**⚙️ Config file:** `/opt/pasarguard/.env` (see [Configuration](#-configuration) for details)
-
-**💾 Data files:** `/var/lib/pasarguard`
-
-**🔒 Important:** Dashboard requires SSL certificate for security
-- Get SSL certificate: [Guide](https://docs.pasarguard.org/en/examples/issue-ssl-certificate)
-- Access: `https://YOUR_DOMAIN:8000/dashboard/`
-
-**🔗 For testing without domain:** Use SSH port forwarding (see below)
-
-</div>
-
----
-
-```bash
-ssh -L 8000:localhost:8000 user@serverip
-```
-
-Then access: `http://localhost:8000/dashboard/`
-
-> ⚠️ **Testing only** - You'll lose access when you close the SSH terminal.
-
-### 🔧 Next Steps:
-
-```bash
-# Generate a one-time setup key for owner account setup
-pasarguard cli generate-temp-key
-
-# Use the key on the dashboard login page to create the owner account
-
-# Get help
-pasarguard --help
-```
-
-
-
-# 📚 Documentation
-
-<div align="left">
-
-**📖 Official Documentation** - Complete guides available in:
-
-🇺🇸 **[English](https://docs.pasarguard.org/en)**
-
-🇮🇷 **[فارسی](https://docs.pasarguard.org/fa)**
-
-🇷🇺 **[Русский](https://docs.pasarguard.org/ru)**
-
-🇨🇳 **[简体中文](https://docs.pasarguard.org/zh-cn)**
-
-</div>
-
-> **Contributing:** Help improve documentation on [GitHub](https://github.com/PasarGuard/PasarGuard.github.io)
-
----
-
-# 💖 Donation
-
-<div align="left">
-
-> **Support PasarGuard Development**
-
-If PasarGuard helps you, consider supporting its development:
-
-[![Donate](https://img.shields.io/badge/Donate-Support%20Us-green?style=for-the-badge)](https://donate.pasarguard.org)
-
-**Thank you for your support!** 💖
-
-</div>
-
----
-
-<p align="center">
-  Made with ❤️ for Internet freedom
-</p>
-
+sudo bash -c "$(curl -fsSL [https://github.com/PasarGuard/scripts/raw/main/pasarguard.sh](https://github.com/PasarGuard/scripts/raw/main/pasarguard.sh))" @ install --database timescaledb
