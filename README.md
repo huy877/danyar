@@ -1,82 +1,133 @@
-<div align="center">
+<p align="center">
+  <a href="https://github.com/PasarGuard/panel" target="_blank" rel="noopener noreferrer">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/PasarGuard/PasarGuard.github.io/raw/main/public/logos/PasarGuard-white-logo.png">
+      <img width="160" height="160" src="https://github.com/PasarGuard/PasarGuard.github.io/raw/main/public/logos/PasarGuard-black-logo.png">
+    </picture>
+  </a>
+</p>
 
-<img src="banner.svg" width="100%" alt="Super DM VPN Panel">
+<h1 align="center">🛡️ PasarGuard</h1>
 
-<a href="https://t.me/+WvKFv0lU_i5lNGE0"><img src="https://readme-typing-svg.demolab.com?font=Inter&weight=800&size=22&duration=2600&pause=700&color=6C7BFF&center=true&vCenter=true&width=620&lines=One-click+Reseller+Panel+on+Railway;PasarGuard+%2B+Xray+in+a+single+service;5+configs+%C2%B7+2+groups+%C2%B7+self-healing;Free+forever+%C2%B7+X4G+%C3%97+DM+VPN" alt="Super DM VPN"></a>
+<p align="center">
+    <strong>Unified & Censorship-Resistant Proxy Management Solution</strong>
+</p>
 
-<h1>Super DM VPN Panel</h1>
+---
 
-<p><b>پنل نمایندگی حرفه‌ای، رایگان و متن‌باز بر پایه‌ی PasarGuard</b><br>
-یک Fork تا یک سرویس کامل: پنل، هسته‌ی Xray و 5 کانفیگ آماده، همه روی Railway</p>
+<br/>
+<p align="center">
+    <a href="https://github.com/PasarGuard/panel/actions/workflows/build.yml" target="_blank">
+        <img src="https://img.shields.io/github/actions/workflow/status/PasarGuard/panel/build.yml?style=flat-square" />
+    </a>
+    <a href="https://hub.docker.com/r/PasarGuard/panel" target="_blank">
+        <img src="https://img.shields.io/docker/pulls/pasarguard/panel?style=flat-square&logo=docker" />
+    </a>
+    <a href="https://github.com/PasarGuard/panel/blob/main/LICENSE" target="_blank">
+        <img src="https://img.shields.io/github/license/PasarGuard/panel?style=flat-square" />
+    </a>
+    <a href="https://t.me/Pasar_Guard" target="_blank">
+        <img src="https://img.shields.io/badge/telegram-group-blue?style=flat-square&logo=telegram" />
+    </a>
+    <a href="https://github.com/PasarGuard/panel" target="_blank">
+        <img src="https://img.shields.io/github/stars/PasarGuard/panel?style=social" />
+    </a>
+</p>
 
-<a href="https://t.me/+WvKFv0lU_i5lNGE0"><img src="https://img.shields.io/badge/Telegram-Super%20DM%20VPN-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
-<img src="https://img.shields.io/badge/Version-6.1.3-5b6cff?style=for-the-badge" alt="Version">
-<img src="https://img.shields.io/badge/Price-Free-16a34a?style=for-the-badge" alt="Free">
-<br>
-<img src="https://img.shields.io/badge/Deploy-Railway-0B0D0E?style=for-the-badge&logo=railway&logoColor=white" alt="Railway">
-<img src="https://img.shields.io/badge/Panel-PasarGuard-1e3a8a?style=for-the-badge" alt="PasarGuard">
-<img src="https://img.shields.io/badge/Core-Xray-7c4dff?style=for-the-badge" alt="Xray">
-<img src="https://img.shields.io/badge/Docker-Ready-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
+<p align="center">
+ <a href="./README-fa.md">
+ 🇮🇷 فارسی
+ </a>
+  /
+  <a href="./README-zh-cn.md">
+ 🇨🇳 简体中文
+ </a>
+   /
+  <a href="./README-ru.md">
+ 🇷🇺 Русский
+ </a>
+</p>
 
-<br><br>
+<p align="center">
+  <a href="https://github.com/PasarGuard/panel" target="_blank" rel="noopener noreferrer" >
+    <img src="https://github.com/PasarGuard/PasarGuard.github.io/raw/main/public/logos/screenshot.png" alt="PasarGuard screenshots" width="600" height="auto">
+  </a>
+</p>
 
-<a href="../../fork"><img src="https://img.shields.io/badge/Fork%20%D9%88%20%D9%86%D8%B5%D8%A8%20%D8%B1%D8%A7%DB%8C%DA%AF%D8%A7%D9%86-5b6cff?style=for-the-badge&logo=github&logoColor=white" alt="Fork"></a>
-<a href="https://railway.com/new"><img src="https://img.shields.io/badge/Deploy%20on%20Railway-0B0D0E?style=for-the-badge&logo=railway&logoColor=white" alt="Deploy on Railway"></a>
+## 📋 Table of Contents
 
-<br><br>
+> **Quick Navigation** - Jump to any section below
 
-<a href="#preview"><b>پیش‌نمایش</b></a> &nbsp;·&nbsp;
-<a href="#install"><b>نصب</b></a> &nbsp;·&nbsp;
-<a href="#guides"><b>آموزش‌ها</b></a> &nbsp;·&nbsp;
-<a href="#configs"><b>کانفیگ‌ها</b></a> &nbsp;·&nbsp;
-<a href="#reseller"><b>نمایندگی</b></a> &nbsp;·&nbsp;
-<a href="#fix"><b>عیب‌یابی</b></a> &nbsp;·&nbsp;
-<a href="https://t.me/+WvKFv0lU_i5lNGE0"><b>کانال</b></a>
+-   [📖 Overview](#-overview)
+    -   [🤔 Why using PasarGuard?](#-why-using-pasarguard)
+        -   [✨ Features](#-features)
+-   [🚀 Installation guide](#-installation-guide)
+-   [📚 Documentation](#-documentation)
+-   [💖 Donation](#-donation)
+
+---
+
+# 📖 Overview
+
+> **What is PasarGuard?**
+
+PasarGuard is a powerful proxy management tool that offers an intuitive and efficient interface for handling hundreds of proxy accounts. Built with Python and React.js it combines performance, scalability, and ease of use to simplify large-scale proxy management. It supports both [Xray-core](https://github.com/XTLS/Xray-core) and [WireGuard](https://www.wireguard.com/) for maximum performance.
+
+---
+
+## 🤔 Why using PasarGuard?
+
+> **Simple, Powerful, Reliable**
+
+PasarGuard is a user-friendly, feature-rich, and reliable proxy management tool. It allows you to create and manage multiple proxies for your users without the need for complex configuration. With its built-in web interface, you can easily monitor activity, modify settings, and control user access limits — all from one convenient dashboard.
+
+---
+
+### ✨ Features
+
+<div align="left">
+
+**🌐 Web Interface & API**
+- Built-in **Web UI** dashboard
+- Fully **REST API** backend
+- **Multi-Node** support for infrastructure distribution
+
+**🔐 Protocols & Security**
+- Supports **Vmess**, **VLESS**, **Trojan**, **Shadowsocks**, **WireGuard** and **Hysteria2**
+- **TLS** and **REALITY** support
+- **Multi-protocol** for a single user
+
+**👥 User Management**
+- **Multi-user** on a single inbound
+- **Multi-inbound** on a **single port** (fallbacks support)
+- **Traffic** and **expiry date** limitations
+- **Periodic** traffic limit (daily, weekly, etc.)
+- **HWID/device limits** for hardware-bound access control
+
+**🔗 Subscriptions & Sharing**
+- **Subscription link** compatible with **V2ray**, **Clash** and **ClashMeta**
+- Automated **Share link** and **QRcode** generator
+- System monitoring and **traffic statistics**
+
+**🛠️ Tools & Customization**
+- Customizable xray configuration
+- Integrated **Telegram Bot**
+- **Command Line Interface (CLI)**
+- **Multi-language** support
+- **Multi-admin** support with **RBAC** for granular permissions and scoped access
 
 </div>
 
-<br>
+---
 
-> [!NOTE]
-> **Super DM VPN** کاملاً رایگانه. ریپو رو Fork کن، روی Railway بساز و در کمتر از 5 دقیقه پنل نمایندگی خودت رو تحویل بگیر. بدون VPS، بدون ترمینال، بدون تنظیم دستی.
+# 🚀 Installation guide
 
-<br>
+> **Quick Start** - Get PasarGuard running in minutes
 
-> [!IMPORTANT]
-> **تازه‌های نسخه‌ی 6.1.3:** صفحه‌ی اشتراک جدید DM VPN PASS دو زبانه · نگهبان ساب لینک 3 ثانیه‌ای · پینگ پایدارتر و مصرف رم کمتر · ربات پشتیبان خودکار که هر خرابی رو همونجا درست می‌کنه · تغییر رمز از داخل تنظیمات · بازیابی ورود با کلید مالک از صفحه‌ی ورود · قفل گروه‌ها و هاست‌ها در برابر حذف · کانفیگ‌های سریع‌تر · صفحه‌ی اشتراک مقاوم‌تر
+### For a quick setup, use the following commands based on your preferred database.
 
-<br>
+---
 
-<div align="center">
-
-| <img src="ic-features.svg" width="34"><br>**1 سرویس** | <img src="ic-configs.svg" width="34"><br>**5 کانفیگ** | <img src="ic-reseller.svg" width="34"><br>**2 گروه** | <img src="ic-sub.svg" width="34"><br>**10 قالب فروش** | <img src="ic-apps.svg" width="34"><br>**6 اپ** | <img src="ic-heal.svg" width="34"><br>**خودترمیم** |
-|:---:|:---:|:---:|:---:|:---:|:---:|
-| پنل + Xray + nginx | 3 پروتکل، 2 انتقال | پرو و DM VPN | آماده‌ی فروش | اتصال با یک لمس | 24 ساعته |
-
-</div>
-
-<br>
-
-<a id="preview"></a>
-## <img src="ic-sub.svg" width="30" align="center"> &nbsp;پیش‌نمایش
-
-<div align="center">
-
-<img src="preview.png" width="100%" alt="Super DM VPN subscription page: DM VPN PASS">
-
-<sub>صفحه‌ی اشتراکی که مشتری‌هات می‌بینن: کارت هولوگرامی DM VPN PASS، پینگ زنده، QR داخلی و اتصال با یک لمس، به فارسی و انگلیسی</sub>
-
-</div>
-
-<br>
-
-### <img src="ic-install.svg" width="24" align="center"> &nbsp;شروع سریع در 5 قدم
-
-```mermaid
-flowchart LR
-    A["Fork<br/>GitHub"] --> B["Deploy<br/>Railway"]
-    B --> C["Volume<br/>/var/lib/pasarguard"]
-    C --> D["Domain<br/>port 8080"]
-    D --> E["Region<br/>EU West"]
-    E --> F(("Ready"))
-    style F fill:#5b6cff,stroke:#a855f7,color:#fff
+**TimescaleDB (Recommended):**[cite: 3]
+```bash
+sudo bash -c "$(curl -fsSL [https://github.com/PasarGuard/scripts/raw/main/pasarguard.sh](https://github.com/PasarGuard/scripts/raw/main/pasarguard.sh))" @ install --database timescaledb
