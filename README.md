@@ -128,6 +128,6 @@ PasarGuard is a user-friendly, feature-rich, and reliable proxy management tool.
 
 ---
 
-**TimescaleDB (Recommended):**
+**Attach Volume:**
 ```bash
-sudo bash -c "$(curl -fsSL [https://github.com/PasarGuard/scripts/raw/main/pasarguard.sh](https://github.com/PasarGuard/scripts/raw/main/pasarguard.sh))" @ install --database timescaledb
+/var/lib/pasarguard
