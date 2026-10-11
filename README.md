@@ -40,7 +40,7 @@
  </a>
   /
   <a href="./README-zh-cn.md">
- 🇨🇳 简体中文
+ 简体中文
  </a>
    /
   <a href="./README-ru.md">
