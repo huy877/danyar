@@ -15,8 +15,8 @@ GB = 1024 ** 3
 DAY = 86400
 
 # All configs go through Railway's TLS edge on 443 with alpn=http/1.1 (the only thing Railway serves).
-# جینکس پرو: the single most compatible + lowest-latency setup: VLESS + WebSocket + early data, Chrome fp.
-# 𝗝𝗶𝗻𝗫: 4 configs that are really different (protocol / transport / fingerprint / path), all supported
+# DM VPN: the single most compatible + lowest-latency setup: VLESS + WebSocket + early data, Chrome fp.
+# DM PRO: 4 configs that are really different (protocol / transport / fingerprint / path), all supported
 #        by v2rayNG, V2Box, Hiddify, Streisand, NekoBox, Happ, Clash Meta and sing-box.
 # ?ed=2560 = early data: the first packet rides on the handshake -> one round trip less per connection.
 INBOUNDS = [
