@@ -7,10 +7,10 @@ DOMAIN = (os.getenv("PUBLIC_DOMAIN") or os.getenv("RAILWAY_PUBLIC_DOMAIN") or ""
 import subprocess
 USER, PASS = "admin", "admin"          # first-boot login; change it later in the panel or with the owner key
 RESELLER_USER, RESELLER_PASS, RESELLER_GB = "reseller", "reseller", 50
-CORE_NAME, NODE_NAME = "JinX-Core", "JinX-Core"
-PRO_GROUP, STD_GROUP = "جینکس پرو", "𝗝𝗶𝗻𝗫"   # 1 premium config / 4 different configs
+CORE_NAME, NODE_NAME = "DM VPN PRO ", "DM-Core"
+PRO_GROUP, STD_GROUP = "DM VPN", "DM"   # 1 premium config / 4 different configs
 OLD_GROUP = "jinx-all"                         # from earlier versions, renamed to STD_GROUP (keeps its users)
-TITLE = os.getenv("CONFIG_TITLE", "جینکس | 𝙎𝙪𝙥𝙚𝙧 𝗝𝗶𝗻𝗫")   # shown after every config name
+TITLE = os.getenv("CONFIG_TITLE", "DM VPN | DM VPN2")   # shown after every config name
 GB = 1024 ** 3
 DAY = 86400
 
@@ -22,7 +22,7 @@ DAY = 86400
 INBOUNDS = [
     # tag              proto     port  net            server path                                   fp         name       group
     ("JX-VLESS-WS-1", "vless",  10001, "ws",          "/ws/",     "chrome",  "𝗣𝗿𝗼",        "pro"),
-    ("JX-VLESS-WS-2", "vless",  10002, "ws",          "/stream/", "firefox", "⚡ 𝗙𝗹𝗮𝘀𝗵",    "std"),
+    ("JX-VLESS-WS-2", "vless",  10002, "ws",          "/stream/", "firefox", "⚡ DMVPN",    "std"),
     ("JX-TROJAN-WS",  "trojan", 10003, "ws",          "/live/",   "safari",  "🔥 𝗙𝗶𝗿𝗲",     "std"),
     ("JX-VMESS-WS",   "vmess",  10004, "ws",          "/gw/",    "edge",    "💎 𝗗𝗶𝗮𝗺𝗼𝗻𝗱", "std"),
     ("JX-VLESS-HU",   "vless",  10005, "httpupgrade", "/cdn/",    "ios",     "🌙 𝗡𝗶𝗴𝗵𝘁",    "std"),
