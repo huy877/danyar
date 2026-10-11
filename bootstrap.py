@@ -7,22 +7,22 @@ DOMAIN = (os.getenv("PUBLIC_DOMAIN") or os.getenv("RAILWAY_PUBLIC_DOMAIN") or ""
 import subprocess
 USER, PASS = "admin", "admin"          # first-boot login; change it later in the panel or with the owner key
 RESELLER_USER, RESELLER_PASS, RESELLER_GB = "reseller", "reseller", 50
-CORE_NAME, NODE_NAME = "DM VPN PRO ", "DM-Core"
-PRO_GROUP, STD_GROUP = "DM VPN", "DM"   # 1 premium config / 4 different configs
+CORE_NAME, NODE_NAME = "JinX-Core", "JinX-Core"
+PRO_GROUP, STD_GROUP = "جینکس پرو", "𝗝𝗶𝗻𝗫"   # 1 premium config / 4 different configs
 OLD_GROUP = "jinx-all"                         # from earlier versions, renamed to STD_GROUP (keeps its users)
-TITLE = os.getenv("CONFIG_TITLE", "DM VPN | DM VPN2")   # shown after every config name
+TITLE = os.getenv("CONFIG_TITLE", "جینکس | 𝙎𝙪𝙥𝙚𝙧 𝗝𝗶𝗻𝗫")   # shown after every config name
 GB = 1024 ** 3
 DAY = 86400
 
 # All configs go through Railway's TLS edge on 443 with alpn=http/1.1 (the only thing Railway serves).
-# DM VPN: the single most compatible + lowest-latency setup: VLESS + WebSocket + early data, Chrome fp.
-# DM PRO: 4 configs that are really different (protocol / transport / fingerprint / path), all supported
+# جینکس پرو: the single most compatible + lowest-latency setup: VLESS + WebSocket + early data, Chrome fp.
+# 𝗝𝗶𝗻𝗫: 4 configs that are really different (protocol / transport / fingerprint / path), all supported
 #        by v2rayNG, V2Box, Hiddify, Streisand, NekoBox, Happ, Clash Meta and sing-box.
 # ?ed=2560 = early data: the first packet rides on the handshake -> one round trip less per connection.
 INBOUNDS = [
     # tag              proto     port  net            server path                                   fp         name       group
     ("JX-VLESS-WS-1", "vless",  10001, "ws",          "/ws/",     "chrome",  "𝗣𝗿𝗼",        "pro"),
-    ("JX-VLESS-WS-2", "vless",  10002, "ws",          "/stream/", "firefox", "⚡ DMVPN",    "std"),
+    ("JX-VLESS-WS-2", "vless",  10002, "ws",          "/stream/", "firefox", "⚡ 𝗙𝗹𝗮𝘀𝗵",    "std"),
     ("JX-TROJAN-WS",  "trojan", 10003, "ws",          "/live/",   "safari",  "🔥 𝗙𝗶𝗿𝗲",     "std"),
     ("JX-VMESS-WS",   "vmess",  10004, "ws",          "/gw/",    "edge",    "💎 𝗗𝗶𝗮𝗺𝗼𝗻𝗱", "std"),
     ("JX-VLESS-HU",   "vless",  10005, "httpupgrade", "/cdn/",    "ios",     "🌙 𝗡𝗶𝗴𝗵𝘁",    "std"),
